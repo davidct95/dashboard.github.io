@@ -1,0 +1,484 @@
+/*Reset CSS*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    height: 100vh;
+    background-color: #353535;
+}
+
+
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*Leaflet*/
+.header {
+    height: 7%;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.menu_contenedor{
+    display: flex;
+    align-items: end;
+    background-color: #353535;
+    height: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.nav_title{
+    float: left;
+    width: 85%;
+    background-color: #707070;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 20px;
+    font-size: 25px;
+    color: #f0beff;
+}
+
+#anios{
+    float: right;
+    width: 15%;
+    height: 80%;
+    background-color: #707070;
+    color: #f0beff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 5px;
+}
+
+
+
+.container {
+    display: flex;
+    height: 93%;
+}
+
+.side-block {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-block {
+    flex: 3;
+    /* 70% del ancho total */
+}
+
+#bloque1,
+#bloque3 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.cuadro01,
+.cuadro02,
+.cuadro03,
+.cuadro04,
+.cuadro06,
+.cuadro07,
+.cuadroCentrado {
+    width: 100%;
+    height: 90%;
+    box-sizing: border-box;
+    /* Ocupar todo el ancho del bloque lateral */
+    flex: 1;
+    margin-bottom: 20px;
+    /* Ocupar el mismo espacio vertical */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b2b2b;
+    font-family: 'Archivo', sans-serif;
+    font-size: 70px;
+    color:  #FF6961;
+
+    
+    border: 1px solid #656565;
+    border-top: none;
+}
+
+.cuadroCentrado {
+    border: none;
+}
+
+.cuadro05 {
+    width: 338px;
+    height: 60%;
+    /* Ocupar todo el ancho del bloque lateral */
+    /* Ocupar el mismo espacio vertical */
+    background-color: #2b2b2b;
+    margin-bottom: 15px;
+}
+
+.cuadro05,
+.cuadro06,
+.cuadro07{
+    border: 1px solid #656565;
+    border-top: none;
+}
+
+
+
+#map {
+    height: 65%;
+    /* Altura específica para #map */
+    width: 100%;
+    border: 1px solid #656565;
+}
+
+
+.cuadro08{
+    height: 35%;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.titulos_bloque2{
+    display: flex;
+    height: 10%;
+
+}
+
+.titulo2{
+    background-color: #2b2b2b;
+    width: 100%;
+    box-sizing: border-box;
+
+    font-family: 'Archivo', sans-serif;
+    color:white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #656565;
+    border-bottom: none;
+
+}
+
+#cuadros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    box-sizing: border-box;
+}
+
+
+
+.cuadro09,
+.cuadro10,
+.cuadro11 {
+    width: 30%;
+    flex: 1;
+    box-sizing: border-box;
+    height: 100%;
+    background-color: #2b2b2b;
+
+    border: 1px solid #656565;
+    border-top: none;
+}
+
+.cuadro10 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#botoneria{
+    flex: 1;
+    width: 100%;
+    background-color: #2b2b2b;
+    display: flex;
+}
+
+#boton1,
+#boton2{
+    width: 50%;
+
+    box-sizing: border-box;
+    font-family: 'Archivo', sans-serif;
+    color: white;
+    text-align: center;
+    background-color: #707070;
+}
+
+
+
+#boton1,
+#boton2,
+#boton3:hover {
+    cursor: pointer;
+  }
+
+#titulo-centro {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+}
+
+.legend {
+    line-height: 18px;
+    color: #555;
+}
+
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+
+
+/* Estilo para el div */
+.cuadro05 {
+    padding: 10px;
+    max-height: 100%;
+    /* Establecer la altura máxima del div */
+    overflow-y: auto;
+    /* Añadir scroll vertical si es necesario */
+}
+
+/*Lista de calles*/
+/* Estilo opcional para la lista */
+.listUl {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.filtro {
+    display: none;
+}
+
+#buscador {
+    position: fixed;
+    width: 320px;
+    height: 20px;
+    color: white;
+    background-color: #656565;
+}
+
+#buscador::placeholder{
+    color: white;
+}
+
+.lista {
+    margin-top: 30px;
+    width: 100%;
+    color: white;
+}
+
+.calle p {
+    color:  #FF6961;
+    margin-top: 5px;
+    font-family: 'Archivo', sans-serif;
+}
+
+.calle {
+    height: 50px;
+    cursor: pointer;
+    padding-top: 15px;
+    border: 1px solid #656565;
+    padding-left: 20px;
+    margin-bottom: 5px;
+    font-family: 'Archivo', sans-serif;
+
+}
+
+.cajita {
+    display: flex;
+    /* Establece el modelo de diseño como flexbox */
+    align-items: center;
+    /* Centra verticalmente los elementos */
+}
+
+.icono {
+    width: 30px;
+}
+
+.cajita p {
+    margin-left: 10px;
+    /* Espacio entre la imagen y el párrafo, ajusta según sea necesario */
+}
+
+.titulo{
+    background-color: #2b2b2b;
+    height: 30px;
+    width: 100%;
+    font-family: 'Archivo', sans-serif;
+    padding-top: 10px;
+    color:  white;
+    box-sizing: border-box;
+
+    border: 1px solid #656565;
+    border-bottom: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cuadro05::-webkit-scrollbar-thumb {
+    background-color: blue;
+    border-radius: 6px;
+  }

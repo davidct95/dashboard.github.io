@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--Plotly-->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Raleway&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <title>DashBoard</title>
+
+</head>
+
+<body>
+    <div class="header">
+        <header>
+            <div id="barra_logo"></div>
+        </header>
+        <nav class="menu_contenedor">
+            <div class="nav_title">Impacto de inundaciones a efecto del Fenómeno Niño en el distrito de Rimac (1997 - 1998 - 2017)</div>
+            <select id="anios">
+                <option value="2017">2017</option>
+                <option value="1998">1998</option>
+                <option value="1987">1987</option>
+                <img src="img/iconos/edificio-del-hospital (1).png">
+            </select>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="side-block" id="bloque1">
+            <div class="titulo">
+                <p>Población Afectada</p>
+            </div>
+            <div class="cuadro01"></div>
+            <div class="titulo">
+                <p>Población afectada por zona</p>
+            </div>
+            <div class="cuadro02"></div>
+            <div class="titulo">
+                <p>Centros de salud</p>
+            </div>
+            <div class="cuadro03"></div>
+            <div class="titulo">
+                <p>Centros educativos</p>
+            </div>
+            <div class="cuadro04"></div>
+        </div>
+        <div class="main-block" id="bloque2">
+            <div id="map"></div>
+
+            <div class="cuadro08">
+                <div class="titulos_bloque2">
+                    <div class="titulo2">
+                        <p>Lotes afectados</p>
+                    </div>
+                    <div class="titulo2" id="titulo-centro">
+                        <p>Área afectada(ha) por zona</p>
+                    </div>
+                    <div class="titulo2">
+                        <p>Año vs Indice de impacto por desastre</p>
+                    </div>
+                </div>
+                <div id="cuadros">
+                    <div class="cuadro09">
+                        <div id="botoneria">
+                            <button id="boton1">Total</button>
+                            <button id="boton2">Zona</button>
+                        </div>
+
+                        <div class="cuadroCentrado">
+                            <div class="cuadro12" id="informacion1"></div>
+                            <div class="cuadro13" id="informacion2" style="display: none;"></div>
+                        </div>
+                    </div>
+                    <div class="cuadro10"></div>
+                    <div class="cuadro11"></div>
+                </div>
+            </div>
+        </div>
+        <div class="side-block" id="bloque3">
+            <p class="titulo">Calles Afectadas - Rimac</p>
+            <div class="cuadro05">
+                <input type="text" id="buscador" placeholder="Buscar...">
+                <div class="lista"></div>
+            </div>
+            <p class="titulo">Calles Afectadas - Rimac</p>
+            <div class="cuadro06"></div>
+        </div>
+    </div>
+    <!--Scripts-->
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="layers/zonas_afectadas_1987.js"></script>
+    <script src="layers/salida.js"></script>
+    <script src="layers/deparamentos.js"></script>
+    <script src="layers/manzanas_rimac.js"></script>
+    <script src="layers/calles_afectadas.js"></script>
+    <script src="layers/style.js"></script>
+    <script src="layers/zonas_afectadas_2017.js"></script>
+    <script src="layers/zonas_afectadas_1998.js"></script>
+    <script src="layers/zonas_afectadas_1987.js"></script>
+    <script src="layers/colegios.js"></script>
+    <script src="layers/hospitales.js"></script>
+    <script src="layers/funciones.js"></script>
+    <script src="layers/pl.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
