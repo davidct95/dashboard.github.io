@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 <!--Aqui es la rama main-->
+=======
+>>>>>>> add-functio
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,12 +34,16 @@
             <div id="barra_logo"></div>
         </header>
         <nav class="menu_contenedor">
-            <div class="nav_title">Impacto de inundaciones a efecto del Fenómeno Niño en el distrito de Rimac (1997 - 1998 - 2017)</div>
-            <select id="anios">
+            <div class="nav_title">Impacto de inundaciones a efecto del Fenómeno Niño en el distrito de <p id = "tituloDistrito"></p> (1987 -
+                1998 - 2017)</div>
+            <select class="opciones" id="distritos">
+                <option>Rimac</option>
+                <option>Lurigancho</option>
+            </select>
+            <select class="opciones" id="anios">
                 <option value="2017">2017</option>
                 <option value="1998">1998</option>
                 <option value="1987">1987</option>
-                <img src="img/iconos/edificio-del-hospital (1).png">
             </select>
         </nav>
     </div>
@@ -98,7 +105,7 @@
                 <input type="text" id="buscador" placeholder="Buscar...">
                 <div class="lista"></div>
             </div>
-            <p class="titulo">Calles Afectadas - Rimac</p>
+            <p class="titulo">Calles Afectadas vs Año</p>
             <div class="cuadro06"></div>
         </div>
     </div>
@@ -106,19 +113,26 @@
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-    <script src="layers/zonas_afectadas_1987.js"></script>
-    <script src="layers/salida.js"></script>
-    <script src="layers/deparamentos.js"></script>
-    <script src="layers/manzanas_rimac.js"></script>
-    <script src="layers/calles_afectadas.js"></script>
-    <script src="layers/style.js"></script>
-    <script src="layers/zonas_afectadas_2017.js"></script>
-    <script src="layers/zonas_afectadas_1998.js"></script>
-    <script src="layers/zonas_afectadas_1987.js"></script>
-    <script src="layers/colegios.js"></script>
-    <script src="layers/hospitales.js"></script>
+
+    <!--we need the topojson library as well-->
+    <script src="https://unpkg.com/topojson@3.0.2/dist/topojson.min.js"></script>
+
+    <script src="layers/lotes_rimac.js"></script>
+    <script src="layers/lotes_lurigancho.js"></script>
     <script src="layers/funciones.js"></script>
-    <script src="layers/pl.js"></script>
+    <script src="layers/colegios_lurigancho.js"></script>
+    <script src="layers/colegios_rimac.js"></script>
+    <script src="layers/hospitales_lurigancho.js"></script>
+    <script src="layers/hospitales_rimac.js"></script>
+
+    <script src="layers/calles_afectadas_lurigancho_2017.js"></script>
+    <script src="layers/calles_afectadas_lurigancho_1998.js"></script>
+    <script src="layers/calles_afectadas_lurigancho_1987.js"></script>
+
+    <script src="layers/calles_afectadas_rimac_1987.js"></script>
+    <script src="layers/calles_afectadas_rimac_1998.js"></script>
+    <script src="layers/calles_afectadas_rimac_2017.js"></script>
+
     <script src="main.js"></script>
 
 </body>
